@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mumbai_package.MumbaiHomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayoutMumbai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#A7E946"
+            android:background="#fff"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="#A7E946"
+            app:tabTextColor="#000"
+            app:tabMode="fixed" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerMumbai"
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom_mumbai"
+        android:layout_marginBottom="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_mumbai"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/rupees_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ff0000"
+            android:textStyle="bold|italic"
+            android:background="#ffff00"
+            android:text=""
+            android:textSize="20dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_total_price"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="8dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_toEndOf="@id/rupees_logo"-->
+        <!--            android:text="0.0"-->
+        <!--            android:textSize="27dp" />-->
+
+        <Button
+            android:id="@+id/btn_view_cart_mumbai"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/background_gradient"
+            android:onClick="viewCart"
+            android:padding="10dp"
+            android:text="Check out→"
+            android:textAllCaps="false"
+            android:textColor="#F80606"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

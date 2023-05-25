@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".LocationChooserActivity">
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/vfresho_logo"
+    android:layout_marginTop="100dp"
+    android:id="@+id/img5656"
+    android:layout_marginLeft="30dp"
+    />
+    <TextView
+        android:id="@+id/TextViewLocation22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img5656"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Choose your location."
+        android:textColor="#F07509"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewLocation22"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_mobile4545"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_location"
+        android:layout_marginLeft="35dp"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        android:text="Enter mobile no."
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_mobilelogin"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_mobile4545"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/bg_editext"
+        android:gravity="center_vertical"
+        android:hint="   mobile"
+        android:inputType="number"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/tv_email4545"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_mobilelogin"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:text="Enter email id."
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_emaillogin"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_email4545"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/bg_editext"
+        android:gravity="center_vertical"
+        android:hint="   email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/buttonStartShop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_emaillogin"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_button"
+        android:gravity="center"
+        android:text="Next" />
+</RelativeLayout>

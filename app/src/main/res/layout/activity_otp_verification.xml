@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".OtpVerificationActivity">
+
+    <EditText
+        android:id="@+id/edittext_otp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_editext"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="20dp"
+        android:digits="0123456789"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:inputType="number"
+        android:hint="Verification code"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/buttonOTPVerify"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="183dp"
+        android:text="Verify" />
+
+
+    <ProgressBar
+        android:visibility="visible"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonOTPVerify"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

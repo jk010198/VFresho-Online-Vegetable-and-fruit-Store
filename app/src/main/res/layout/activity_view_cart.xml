@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCart">
+
+    <ListView
+        android:id="@+id/listview_viewcart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/textview_total"
+        >
+
+    </ListView>
+    <TextView
+        android:id="@+id/textview_total"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="18dp"
+        android:text="Total ₹ "
+        android:textSize="18dp"
+        android:textColor="#F70606"
+        android:layout_above="@id/textview_deliveryCharges"
+        android:textAlignment="textEnd" />
+    <TextView
+        android:id="@+id/textview_deliveryCharges"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="25dp"
+        android:text="Delivery charge: ₹ 50"
+        android:textSize="17dp"
+        android:textColor="#F70606"
+        android:layout_above="@id/textview_grandtotal"
+        android:textAlignment="textEnd" />
+    <TextView
+        android:id="@+id/textview_grandtotal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="18dp"
+        android:textSize="18dp"
+        android:textColor="#F70606"
+        android:layout_above="@id/button_payment"
+        android:textAlignment="textEnd" />
+
+    <Button
+        android:id="@+id/button_payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_button"
+        android:onClick="nextToDetails"
+        android:text="Place Order"
+        android:textColor="#fff"
+        android:textSize="23dp" />
+
+</RelativeLayout>

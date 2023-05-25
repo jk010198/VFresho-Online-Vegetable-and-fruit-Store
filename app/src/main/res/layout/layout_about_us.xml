@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="#458004"
+
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="About VFesho"
+    android:textColor="#FFFFFF"
+    android:layout_marginTop="40dp"
+    android:layout_gravity="center_horizontal"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:text="VFresho delivers fresh vegetables &amp; fruits well packed.
+        \nWe are spacialize in online deliviery of Vegetables &amp; Fruits. So we are targeting to enlist more than 50 to 70 veggies in our online store.
+        \nWe assures on time delivery within our slot. Your veggies &amp; fruits comes in proper way packed differently. All veggies are already cleaned so it will be ready to use.
+        \n Your vegetable orders comes with computarized invoice which makes you easier to check each n every items received. COD option is available. Online payment option ( PTM, GOOGLE PAY) is available on the time of delivery.
+\n\nReturn Policy is applicable.\n\n
+        "
+        />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="#458004"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact us"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/dialog_textview_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:text="VFresho\n Rustomjee Evershine Global City, Near Yazoo Park,
+         Virar West. Palghar, Maharashtra. PIN: 401303
+         \n\nour website: https://vfresho.com
+         \nmobile: 7738678013
+         \nemail: vfresho@gmail.com
+         \n\n\nApp powered by. 'IT-HUB Live'
+
+"
+        />
+
+</LinearLayout>

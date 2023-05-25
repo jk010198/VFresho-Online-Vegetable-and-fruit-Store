@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#458004"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <ImageButton
+        android:id="@+id/btn_dialog_coconut_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:alpha="150"
+        android:src="@drawable/ic_clear_btnwhite" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/narial_pani" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Subscribe Narial Pani on daily basis"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/edittext_dialog_coconut_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint=" name"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffff00" />
+
+    <EditText
+        android:id="@+id/edittext_dialog_coconut_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint=" mobile"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffff00" />
+
+    <EditText
+        android:id="@+id/edittext_dialog_coconut_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint=" address"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffff00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Quantity: "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/edittext_dialog_coconut_quantity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint=" quantity"
+        android:inputType="number"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffff00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Choose Rate: "
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup_dialog_coconut_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_dialog_coconut_price30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 30"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radio_dialog_coconut_price40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="₹ 40"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fix delivery slot: 9 PM to 10:30 PM."
+    android:textColor="#FFFF00"
+    />
+    <Button
+        android:id="@+id/buttonSubmitCoconut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Submit" />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

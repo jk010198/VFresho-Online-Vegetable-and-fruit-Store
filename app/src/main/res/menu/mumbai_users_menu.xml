@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/mumbai_cart_menu"
+        android:title="Cart"
+        app:showAsAction="always"
+        android:icon="@drawable/shopping_cart"/>
+
+    <item android:id="@+id/mumbai_refresh"
+        android:title="Refresh"
+        app:showAsAction="always"
+        android:icon="@drawable/refresh"/>
+    <item android:id="@+id/menu_mumbai_changeLocation"
+        android:title="Change Location"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/menu_mumbai_aboutus"
+        android:title="About Us"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/menu_mumbai_contactUs"
+        android:title="Contact Us"
+        app:showAsAction="never"
+
+        />
+    <item android:id="@+id/menu_mumbai_shareApp"
+        android:title="Share VFresho App."
+        app:showAsAction="never"
+
+        />
+<!--    <item android:id="@+id/menu_mumbai_logout"-->
+<!--        android:title="Logout."-->
+<!--        app:showAsAction="never"-->
+
+<!--        />-->
+
+</menu>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VFresho</string>
+    <string name="sp_name_user">vfresho_admin_sp7799</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">VFresho</string>
+</resources>
